@@ -24,6 +24,26 @@ public class Calculator {
             area.height = scan.nextDouble();
             System.out.println("The Area of your rectangle is: " + area.Triangle());
         }
+        else if(action_today == 2) {    // Rectangles
+            System.out.print("Enter Length: ");
+            double length = scan.nextDouble(); // accept the input
+
+            System.out.print("Enter Breadth: ");    // request for input
+            double breadth = scan.nextDouble();      // accept the input
+
+            // print result to command line
+            System.out.println("The Area of your rectangle is: " + area.Rectangle(length, breadth));
+        }
+        else if(action_today == 3) {    // Circles
+            System.out.print("What is the Radius of Your Circle? ");
+            area.radius = scan.nextDouble();
+            area.Circle();
+            // area.result() below is calling a method in the area class that returns the value of the variable result
+            System.out.println("The Area of your Circle is: " + area.result());
+        }
+        else {  // general Arithmetic - we will work on this next section
+
+        }
 
 
 
