@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Shedeur_Tutor_Rene.iml" filepath="$PROJECT_DIR$/Shedeur_Tutor_Rene.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CalculatorApp.iml" filepath="$PROJECT_DIR$/CalculatorApp.iml" />
     </modules>
   </component>
 </project>
