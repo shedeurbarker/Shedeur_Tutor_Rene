@@ -1,8 +1,11 @@
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Calculator {
     static int action_today;
     public static void main (String[] arg) {
+
 
         Area area = new Area();
         Maths maths = new Maths();
@@ -11,14 +14,18 @@ public class Calculator {
         boolean calculate = true;
 
         System.out.println("What do you want to do today:");
+
         while(calculate){
 
-            System.out.println("Enter 1 - Areas of Triangles");
-            System.out.println("Enter 2 - Areas of Rectangle");
-            System.out.println("Enter 3 - Areas of Circles");
-            System.out.println("Enter 4 - For General Arithmetic");
-            System.out.println("Enter 0 - To end Program");
-            System.out.print("Your Choice: ");
+            ArrayList<String> first_option = new Options().FirstOption();//options.FirstOption();
+
+            for (String s : first_option) {
+                System.out.println(s);
+            }
+
+
+
+
             action_today = scan.nextInt();
 
             if (action_today == 1) { // Triangles
