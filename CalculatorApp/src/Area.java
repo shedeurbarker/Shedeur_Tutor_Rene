@@ -21,5 +21,4 @@ public class Area {
     public double result() {
         return result;
     }
-
 }
